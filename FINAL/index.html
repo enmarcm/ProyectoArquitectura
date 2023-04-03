@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <title>PROYECTO ARQUITECTURA</title>
+</head>
+
+<body>
+
+  <div class="container-fluid p-5">
+    <div class="row p-5">
+      <div class="col-lg-6 col-sm-12 p-2 align-items-center ">
+        <h5 class="label-control text-center mb-2">Ingrese la cantidad de datos a sumar:</h5>
+        <div class="w-100 d-flex justify-content-center mb-4">
+          <input type="text" class="form-control w-50 me-1 inputCantidad">
+          <button class="btn btn-danger w-25 btnOk fw-bold">Ok</button>
+        </div>
+
+        <div class="row d-none rowResultados w-75 mx-auto">
+          <div class="col-lg-6 col-sm-12 p-2">
+            <div class="containerInputs p-2 overflow-auto">
+
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-sm-12 p-2 d-flex align-items-start containerResultados">
+            <div class="w-100">
+              <label class="label-control fw-bold">Valores a sumar en Binario</label>
+              <textarea readonly class="form-control valoresBinario mb-1" value="" style="resize: none;"></textarea>
+
+              <label class="label-control fw-bold">Resultado</label>
+              <input readonly class="form-control resultadoNormal mb-1">
+
+              <label class="label-control fw-bold">Resultado en Binario</label>
+              <textarea readonly class="form-control resultadoBinario mb-1" value="" style="resize: none;"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6 col-sm-12 p-2 d-none colTablas">
+        <div class="containerTabla">
+          <table class="table table-striped mb-3">
+            <thead>
+              <tr>
+                <th scope="col">Registros</th>
+              </tr>
+            </thead>
+            <tbody class="tablaBRegistros">
+
+            </tbody>
+          </table>
+        </div>
+
+
+        <div class="containerTabla">
+          <table class="table table-striped overflow-auto table-responsive">
+            <thead>
+              <tr>
+                <th scope="col">Memoria Y Datos</th>
+              </tr>
+            </thead>
+            <tbody class="tablaBMemoria">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  <footer class="footer p-5 bg-danger">
+    <h5 class="text-center text-light">Realizado por Enmanuel Colina, Miguel Guillén y Royer Merchán para la asignatura
+      Arquitectura del Computador durante el periodo acádemico 2023-A</h5>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="interfaz.js" type="module"></script>
+</body>
+
+</html>
