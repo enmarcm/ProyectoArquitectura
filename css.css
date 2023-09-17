@@ -1,0 +1,17 @@
+.container-fluid {
+  height: calc(100vh);
+  background-color: #e8c9de;
+}
+
+.containerTabla {
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.inputDato::placeholder {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
